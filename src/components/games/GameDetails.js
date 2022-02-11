@@ -59,7 +59,7 @@ export const GameDetails = () => {
         <div>Reviews: {reviews.map(r => 
                                     {if (r.game === game.id) {
                                         return <div>{r.review}</div>}})}</div>
-        
+        <div>Average rating: {game.average_rating}</div>
          <form>
             <fieldset>
                 <div className="form-group">
